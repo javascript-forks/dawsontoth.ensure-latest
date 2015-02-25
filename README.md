@@ -5,7 +5,7 @@ To install:
 Add the script hook to your package.json:
 
     "scripts": {
-        "preinstall": "node ./node_modules/ensure-latest/index.js"
+        "preinstall": "[ -e ./node_modules/ensure-latest/index.js ] && node ./node_modules/ensure-latest || echo"
     },
 
 Finally, mark the modules that you want to ensure are latest in your package.json:

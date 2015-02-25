@@ -1,6 +1,6 @@
 {
   "name": "ensure-latest",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Instead of specifying a wildcard version, ensure-latest checks that you have the latest version of a module whenever npm install is run.",
   "main": "index.js",
   "scripts": {
