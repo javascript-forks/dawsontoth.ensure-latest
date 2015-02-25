@@ -33,7 +33,7 @@ try {
 
 	function ensureLatest(dict, pkg, latestVersion) {
 		if (dict[pkg] !== undefined && dict[pkg] !== latestVersion) {
-			rawPackageJSON = rawPackageJSON.replace(new RegExp('("' + pkg + '": ?)"' + dict[pkg] + '"'), '$1"' + latestVersion + '"');
+			rawPackageJSON = rawPackageJSON.replace(new RegExp('("' + pkg + '": ?)"[^"]+"'), '$1"' + latestVersion + '"');
 			console.log('- Updating ' + pkg + ' from ' + dict[pkg] + ' to ' + latestVersion);
 			dirty = true;
 		}
