@@ -1,0 +1,24 @@
+{
+  "name": "ensure-latest",
+  "version": "1.0.0",
+  "description": "Instead of specifying a wildcard version, ensure-latest checks that you have the latest version of a module whenever npm install is run.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:dawsontoth/ensure-latest.git"
+  },
+  "keywords": [
+    "ensure",
+    "latest",
+    "npm"
+  ],
+  "author": "Dawson Toth",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dawsontoth/ensure-latest/issues"
+  },
+  "homepage": "https://github.com/dawsontoth/ensure-latest"
+}
